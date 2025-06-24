@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: gigatecq-admin-panel
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn panel_server:app
+    plan: free
